@@ -1,0 +1,86 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=DD723B48EF684E4D888689CE6B8064AF/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=DD723B48EF684E4D888689CE6B8064AF/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=DD723B48EF684E4D888689CE6B8064AF/Description/@EntryValue">Define dependency property</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=DD723B48EF684E4D888689CE6B8064AF/Field/=ContainingType/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=DD723B48EF684E4D888689CE6B8064AF/Field/=ContainingType/Expression/@EntryValue">typeName()</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=DD723B48EF684E4D888689CE6B8064AF/Field/=ContainingType/InitialRange/@EntryValue">-1</s:Int64>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=DD723B48EF684E4D888689CE6B8064AF/Field/=ContainingType/Order/@EntryValue">3</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=DD723B48EF684E4D888689CE6B8064AF/Field/=Description/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=DD723B48EF684E4D888689CE6B8064AF/Field/=Description/Order/@EntryValue">2</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=DD723B48EF684E4D888689CE6B8064AF/Field/=PropertyName/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=DD723B48EF684E4D888689CE6B8064AF/Field/=PropertyName/Expression/@EntryValue">suggestVariableName()</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=DD723B48EF684E4D888689CE6B8064AF/Field/=PropertyName/InitialRange/@EntryValue">5</s:Int64>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=DD723B48EF684E4D888689CE6B8064AF/Field/=PropertyName/Order/@EntryValue">1</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=DD723B48EF684E4D888689CE6B8064AF/Field/=PropertyType/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=DD723B48EF684E4D888689CE6B8064AF/Field/=PropertyType/Expression/@EntryValue">completeType("")</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=DD723B48EF684E4D888689CE6B8064AF/Field/=PropertyType/InitialRange/@EntryValue">2</s:Int64>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=DD723B48EF684E4D888689CE6B8064AF/Field/=PropertyType/Order/@EntryValue">0</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=DD723B48EF684E4D888689CE6B8064AF/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=DD723B48EF684E4D888689CE6B8064AF/Scope/=C3001E7C0DA78E4487072B7E050D86C5/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=DD723B48EF684E4D888689CE6B8064AF/Scope/=C3001E7C0DA78E4487072B7E050D86C5/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=DD723B48EF684E4D888689CE6B8064AF/Scope/=C3001E7C0DA78E4487072B7E050D86C5/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=DD723B48EF684E4D888689CE6B8064AF/Shortcut/@EntryValue">propdp</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=DD723B48EF684E4D888689CE6B8064AF/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=DD723B48EF684E4D888689CE6B8064AF/Text/@EntryValue">#region $PropertyName$ 依存関係プロパティ&#xD;
+/// &lt;summary&gt;&#xD;
+/// &lt;see cref="$PropertyName$"/&gt; 依存関係プロパティを識別します。&#xD;
+/// &lt;/summary&gt;&#xD;
+[NotNull]&#xD;
+public static readonly DependencyProperty $PropertyName$Property&#xD;
+    = DependencyProperty.Register(&#xD;
+        nameof($PropertyName$),&#xD;
+        typeof($PropertyType$),&#xD;
+        typeof($ContainingType$),&#xD;
+        new PropertyMetadata(default($PropertyType$), $PropertyName$ChangedCallback));&#xD;
+&#xD;
+/// &lt;summary&gt;&#xD;
+/// $Description$を取得または設定します。&#xD;
+/// これは依存関係プロパティです。&#xD;
+/// &lt;/summary&gt;&#xD;
+/// &lt;value&gt;$Description$。&lt;/value&gt;&#xD;
+[NotNull]&#xD;
+public $PropertyType$ $PropertyName$&#xD;
+{&#xD;
+    get { return ($PropertyType$)GetValue($PropertyName$Property); }&#xD;
+    set { SetValue($PropertyName$Property, value); }&#xD;
+}&#xD;
+&#xD;
+/// &lt;summary&gt;&#xD;
+/// &lt;see cref="$PropertyName$"/&gt; 依存関係プロパティが変更されたときに呼び出されます。&#xD;
+/// &lt;/summary&gt;&#xD;
+/// &lt;param name="d"&gt;イベント ソース。&lt;/param&gt;&#xD;
+/// &lt;param name="e"&gt;イベント データ。&lt;/param&gt;&#xD;
+private static void $PropertyName$ChangedCallback([NotNull] DependencyObject d, [NotNull] DependencyPropertyChangedEventArgs e)&#xD;
+{&#xD;
+    (($ContainingType$)d).On$PropertyName$Changed(($PropertyType$)e.OldValue, ($PropertyType$)e.NewValue);&#xD;
+}&#xD;
+&#xD;
+/// &lt;summary&gt;&#xD;
+/// &lt;see cref="$PropertyName$"/&gt; 依存関係プロパティが変更されたときに呼び出されます。&#xD;
+/// &lt;/summary&gt;&#xD;
+/// &lt;param name="old$PropertyName$"&gt;変更される前の値。&lt;/param&gt;&#xD;
+/// &lt;param name="new$PropertyName$"&gt;変更された後の値。&lt;/param&gt;&#xD;
+protected virtual void On$PropertyName$Changed([NotNull] $PropertyType$ old$PropertyName$, [NotNull] $PropertyType$ new$PropertyName$)&#xD;
+{&#xD;
+    throw new NotImplementedException();&#xD;
+}&#xD;
+#endregion</s:String></wpf:ResourceDictionary>
