@@ -71,6 +71,8 @@ public $PropertyType$ $PropertyName$&#xD;
 /// &lt;param name="e"&gt;イベント データ。&lt;/param&gt;&#xD;
 private static void $PropertyName$ChangedCallback([NotNull] DependencyObject d, [NotNull] DependencyPropertyChangedEventArgs e)&#xD;
 {&#xD;
+    Debug.Assert(d is $ContainingType$);&#xD;
+    Debug.Assert(e != null);&#xD;
     (($ContainingType$)d).On$PropertyName$Changed(($PropertyType$)e.OldValue, ($PropertyType$)e.NewValue);&#xD;
 }&#xD;
 &#xD;
